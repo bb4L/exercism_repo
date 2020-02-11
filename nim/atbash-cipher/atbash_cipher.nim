@@ -26,3 +26,17 @@ proc encode*(input:string): string =
 
 proc decode*(input:string): string =
     handleChars(prepChars(input))
+
+
+# https://exercism.io/tracks/nim/exercises/atbash-cipher/solutions/f27a9129ea3047e9a18ca8e41472584b
+
+# import strutils, std/wordwrap
+
+# proc decode*(input: string): string =
+#     let input = input.toLower
+#     for c in input:
+#       if c.isDigit: result.add(c)
+#       elif c.isAlphaAscii: result.add(chr(219 - ord(c)))
+  
+#   proc encode*(input: string): string =
+#     wrapWords(s = decode(input), maxLineWidth = 5, newLine = " ")
